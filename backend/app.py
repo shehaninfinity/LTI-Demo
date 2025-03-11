@@ -9,9 +9,11 @@ def create_app():
     # Register blueprints
     from routes.lti_routes import lti_bp
     from routes.pdf_routes import pdf_bp
+    from routes.oidc_routes import oidc_bp
 
     app.register_blueprint(lti_bp, url_prefix='/lti')
     app.register_blueprint(pdf_bp, url_prefix='/pdfs')
+    app.register_blueprint(oidc_bp, url_prefix='/oidc')
 
     return app
 

@@ -1,11 +1,6 @@
-# backend/config.py
-import os
-
 class Config:
-    SECRET_KEY = os.environ.get("SECRET_KEY") or "your_secret_key_here"
-    LTI_ISSUER = "https://your.lti.issuer"
+    SECRET_KEY = "your_secret"
     LTI_CLIENT_ID = "your_client_id"
-    LTI_DEPLOYMENT_ID = "your_deployment_id"
-    LTI_KEY_SET_URL = "https://your.lti.keyset.url"  # For production use
-    # Add any additional configuration parameters as needed.
-    
+    LTI_ISSUER = "https://platform.example.com"
+    LTI_KEY_SET_URL = "https://platform.example.com/.well-known/jwks.json"
+    LTI_AUTH_URL = "https://platform.example.com/auth"
