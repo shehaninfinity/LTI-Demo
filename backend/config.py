@@ -24,3 +24,7 @@ class Config:
     # but this shows how you would do it for a typical LTI Advantage integration.
     AGS_LINEITEMS_URL = "https://turnitin.example.com/lineitems"
     NRPS_MEMBERSHIPS_URL = "https://turnitin.example.com/memberships"
+
+    # For Access Token URL and optional Platform Authorization Provider:
+    ACCESS_TOKEN_URL = "https://turnitin.example.com/token"
+    PLATFORM_AUTHORIZATION_PROVIDER = "https://turnitin.example.com/authorization"
